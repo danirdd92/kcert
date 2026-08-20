@@ -1,0 +1,20 @@
+[project]
+name = "kcert"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Daniel Rashba", email = "danirdd92@gmail.com" }
+]
+requires-python = ">=3.14.7"
+dependencies = [
+    "cryptography>=50.0.0",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+kcert = "kcert:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
